@@ -1,12 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { ServicesComponent } from './services/services.component';
 import { StartComponent } from './start/start.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HttpComponent } from './http/http.component';
+import { ConcatStrPipe } from './concat-str.pipe';
 
 const appRoutes: Routes = [
 //  { path: 'crisis-center', component: CrisisListComponent },
@@ -23,9 +24,9 @@ const appRoutes: Routes = [
     data: { title: 'About Page' }
   },
   {
-    path: 'services',
-    component: ServicesComponent,
-    data: { title: 'Services Page' }
+    path: 'http',
+    component: HttpComponent,
+    data: { title: 'Http Page' }
   },
 
   { path: '**', component: PageNotFoundComponent }
@@ -35,15 +36,17 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     AboutComponent,
-    ServicesComponent,
     StartComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HttpComponent,
+    ConcatStrPipe
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes, {enableTracing: true}
     ),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
