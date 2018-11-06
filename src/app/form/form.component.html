@@ -1,0 +1,10 @@
+<form>
+    <div class="form-row">
+        <div class="col-11">
+            <input autofocus [value]="message" (input)="message=$event.target.value" class="form-control form-control-lg" id="message" type="text" placeholder="Message">
+        </div>
+        <div class="col">
+            <button type="button" (click)="sendMessage()" class="btn btn-outline-primary btn-lg">Send</button>
+        </div>
+    </div>
+</form>

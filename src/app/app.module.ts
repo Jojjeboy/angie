@@ -10,6 +10,8 @@ import { HttpComponent } from './http/http.component';
 import { ConcatStrPipe } from './concat-str.pipe';
 import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
+import { MessageComponent } from './message/message.component';
+import { FormComponent } from './form/form.component';
 
 const appRoutes: Routes = [
 {
@@ -27,6 +29,11 @@ const appRoutes: Routes = [
     component: HttpComponent,
     data: { title: 'Http Page' }
   },
+  {
+    path: 'message',
+    component: MessageComponent,
+    data: { title: 'Message' }
+  },
 
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -40,7 +47,9 @@ const appRoutes: Routes = [
     HttpComponent,
     ConcatStrPipe,
     PostsComponent,
-    PostComponent
+    PostComponent,
+    MessageComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
