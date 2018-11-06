@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Post } from '../post';
-import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-http',
@@ -9,19 +7,9 @@ import { ApiService } from '../api.service';
 })
 export class HttpComponent implements OnInit {
 
-  private posts: Post[];
-
-
-  constructor(private apiService: ApiService) { }
-
-  public getPosts(){
-    this.apiService.getPosts().subscribe((data: Post[]) => {
-      this.posts =  data;
-  });
-}
+  constructor() { }
 
   ngOnInit() {
-    this.getPosts();
   }
 
 }

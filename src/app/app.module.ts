@@ -8,6 +8,8 @@ import { StartComponent } from './start/start.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HttpComponent } from './http/http.component';
 import { ConcatStrPipe } from './concat-str.pipe';
+import { PostsComponent } from './posts/posts.component';
+import { PostComponent } from './post/post.component';
 
 const appRoutes: Routes = [
 //  { path: 'crisis-center', component: CrisisListComponent },
@@ -39,7 +41,9 @@ const appRoutes: Routes = [
     StartComponent,
     PageNotFoundComponent,
     HttpComponent,
-    ConcatStrPipe
+    ConcatStrPipe,
+    PostsComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
