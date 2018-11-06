@@ -10,9 +10,6 @@ import { HttpComponent } from './http/http.component';
 import { ConcatStrPipe } from './concat-str.pipe';
 
 const appRoutes: Routes = [
-//  { path: 'crisis-center', component: CrisisListComponent },
-//  { path: 'hero/:id',      component: HeroDetailComponent },
-
 {
     path: '',
     component: StartComponent,
