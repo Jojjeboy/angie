@@ -2,11 +2,11 @@
     <!-- Example row of columns -->
     <div class="row">
         <div class="col-md-12">
-            <ul>
-                <li>first</li>
-                <li>second</li>
-                <li>third</li>
-                <li *ngFor="let msg of messages">{{ msg }}</li>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">first</li>
+                <li class="list-group-item">second</li>
+                <li class="list-group-item">third</li>
+                <li class="list-group-item" *ngFor="let msg of messages">{{ msg }}</li>
             </ul>
         </div>
     </div>
