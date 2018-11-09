@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Event } from '@angular/router';
 
 @Component({
   selector: 'app-form',
@@ -12,23 +13,18 @@ export class FormComponent implements OnInit {
 
   @Output() messageEvent = new EventEmitter<string>();
 
-  onSubmit(data: any, event: Event) {
-    alert(data);
-    console.log(data);
-    console.log(event);
-    event.preventDefault();
-    if (this.message.length) {
-
-      this.messageEvent.emit(this.message);
-      this.resetMessageField();
+  onKeydown(event: any) {
+    if (event.key === 'Enter') {
+      if (this.message.length) {
+        this.messageEvent.emit(this.message);
+        this.resetMessageField();
+      }
     }
   }
 
   resetMessageField() {
     this.message = '';
   }
-
-  constructor() { }
 
   ngOnInit() {
     this.resetMessageField();
