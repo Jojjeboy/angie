@@ -9,7 +9,10 @@
     </thead>
     <tbody>
         <tr *ngFor="let post of posts">
-            <app-post [post]="post"></app-post>
+            <td>{{ post.id }}</td>
+            <td>{{ post.userId }}</td>
+            <td>{{ post.title }}</td>
+            <td>{{ post.body | concatStr:12:true }}</td>
         </tr>
     </tbody>
 </table>

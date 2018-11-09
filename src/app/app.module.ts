@@ -9,7 +9,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HttpComponent } from './http/http.component';
 import { ConcatStrPipe } from './concat-str.pipe';
 import { PostsComponent } from './posts/posts.component';
-import { PostComponent } from './post/post.component';
 import { MessageComponent } from './message/message.component';
 import { FormComponent } from './form/form.component';
 
@@ -47,7 +46,6 @@ const appRoutes: Routes = [
     HttpComponent,
     ConcatStrPipe,
     PostsComponent,
-    PostComponent,
     MessageComponent,
     FormComponent
   ],
