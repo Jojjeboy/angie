@@ -1,0 +1,4 @@
+input#message:focus{
+    outline: none;
+    box-shadow: none;
+}

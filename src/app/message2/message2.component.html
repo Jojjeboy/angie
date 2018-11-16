@@ -1,0 +1,19 @@
+<div class="container">
+  <!-- Example row of columns -->
+  
+  <div class="row">
+      <div class="col-12">
+          <app-form (messageEvent)="recieveMessage2($event)" placeholder="Message 2"></app-form>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let msg of messages">{{ msg }}</li>
+        </ul>
+    </div>
+</div>
+  <hr>
+
+</div>
+<!-- /container -->

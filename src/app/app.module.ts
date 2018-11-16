@@ -11,7 +11,7 @@ import { ConcatStrPipe } from './concat-str.pipe';
 import { PostsComponent } from './posts/posts.component';
 import { MessageComponent } from './message/message.component';
 import { FormComponent } from './form/form.component';
-
+import { Message2Component } from './message2/message2.component';
 const appRoutes: Routes = [
 {
     path: '',
@@ -33,6 +33,11 @@ const appRoutes: Routes = [
     component: MessageComponent,
     data: { title: 'Message' }
   },
+  {
+    path: 'message2',
+    component: Message2Component,
+    data: { title: 'Messages' }
+  },
 
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -47,7 +52,8 @@ const appRoutes: Routes = [
     ConcatStrPipe,
     PostsComponent,
     MessageComponent,
-    FormComponent
+    FormComponent,
+    Message2Component
   ],
   imports: [
     BrowserModule,

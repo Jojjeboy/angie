@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularNgLocalstorageService } from 'angular-ng-localstorage';
+import { LocalStorageService } from '../local-storage.service';
 
 @Component({
   selector: 'app-message',
@@ -8,17 +8,21 @@ import { AngularNgLocalstorageService } from 'angular-ng-localstorage';
 })
 export class MessageComponent implements OnInit {
 
-  constructor(private angularNgLocalstorageService: AngularNgLocalstorageService) { }
+  constructor(private localStorageService: LocalStorageService) { }
   messages;
   ngOnInit() {
-    this.angularNgLocalstorageService.init({}, 'angie-message');
-    this.messages = this.angularNgLocalstorageService.getAll();
+    this.localStorageService.init({}, 'angie-message');
+    this.messages = this.localStorageService.getAll().reverse();
   }
 
   recieveMessage($event) {
-    this.messages.push($event);
-    this.angularNgLocalstorageService.add($event);
+    this.messages.unshift($event);
+    this.localStorageService.add($event);
   }
 
 
+  removeMsg(msg: string) {
+    this.messages.splice(this.messages.lastIndexOf(msg), 1);
+    this.localStorageService.writeLS(this.messages);
+  }
 }

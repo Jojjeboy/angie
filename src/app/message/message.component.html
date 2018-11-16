@@ -1,15 +1,15 @@
-<div class="container">
+<div class="container message">
     <!-- Example row of columns -->
     <div class="row">
-        <div class="col-md-12">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item" *ngFor="let msg of messages">{{ msg }}</li>
-            </ul>
+        <div class="col-12">
+            <app-form (messageEvent)="recieveMessage($event)" placeholder="Message"></app-form>
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
-            <app-form (messageEvent)="recieveMessage($event)"></app-form>
+        <div class="col-md-12">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let msg of messages">{{ msg }} <span (click)="removeMsg(msg)" class="badge badge-danger badge-pill">&#215;	</span></li>
+            </ul>
         </div>
     </div>
 
