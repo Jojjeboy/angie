@@ -18,6 +18,10 @@
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
                         "tsConfig": "src/tsconfig.app.json",
+                        "i18nFile": "src/app/locale/messages.sv.xlf",
+                        "i18nLocale": "sv",
+                        "i18nFormat": "xlf",
+                        "aot": true,
                         "assets": [
                             "src/favicon.ico",
                             "src/assets"

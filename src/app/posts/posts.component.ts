@@ -11,7 +11,7 @@ export class PostsComponent implements OnInit {
 
   constructor(private apiService: ApiService) { }
 
-  private posts: Post[];
+  public posts: Post[];
 
   public getPosts() {
     this.apiService.getPosts().subscribe((data: Post[]) => {

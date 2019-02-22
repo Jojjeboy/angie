@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#" i18n>Navigation</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -7,25 +7,21 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                <a class="nav-link" routerLink="/">Home</a>
+                <a class="nav-link" routerLink="/" i18n>Home</a>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="/about">About</a>
+                <a class="nav-link" routerLink="/about" i18n>About</a>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="/http">Http</a>
+                <a class="nav-link" routerLink="/http" i18n>Http</a>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="/message">Message</a>
+                <a class="nav-link" routerLink="/message" i18n>Message</a>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="/message2">Message 2</a>
+                <a class="nav-link" routerLink="/message2" i18n>Message 2</a>
             </li>
         </ul>
-        <!--<form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>-->
     </div>
 </nav>
 
@@ -34,10 +30,10 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3">Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
+            <h1 class="display-3" i18n>Hello, world!</h1>
+            <p i18n>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
             </p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button" i18n>Learn more &raquo;</a></p>
 
         </div>
     </div>
@@ -48,5 +44,5 @@
 </main>
 
 <footer class="container">
-    <p>&copy; Company 2017-2018</p>
+    <p i18n>&copy; Company 2017-2018</p>
 </footer>
