@@ -1,19 +1,23 @@
-import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { Event } from '@angular/router';
+import { Component, OnInit, Output, EventEmitter, Input, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
-export class FormComponent implements OnInit {
+export class FormComponent implements OnInit, AfterViewInit {
 
   message: '';
 
   @Output() messageEvent = new EventEmitter<string>();
 
-  @Input('placeholder') placeholder: String;
+  @Input() placeholder: string;
+
+  @ViewChild('messageInput', {static: false}) messageInputElementRef: ElementRef;
+  ngAfterViewInit(){
+    this.messageInputElementRef.nativeElement.focus();
+  }
+
 
   onKeydown(event: any) {
     if (event.key === 'Enter') {

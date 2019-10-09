@@ -1,5 +1,5 @@
 <div class="form-row">
     <div class="col-12">
-        <input autofocus [value]="message" (keydown)="onKeydown($event)" (input)="message=$event.target.value" class="form-control form-control-lg" id="message" type="text" placeholder="{{ placeholder }}">
+        <input #messageInput [value]="message" (keydown)="onKeydown($event)" (input)="message=$event.target.value" class="form-control form-control-lg" id="message" type="text" placeholder="{{ placeholder }}">
     </div>
 </div>

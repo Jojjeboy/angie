@@ -11,7 +11,7 @@ export class ApiService {
   API_URL  =  'https://jsonplaceholder.typicode.com';
 
 
-  getPosts(){
+  getPosts() {
     return this.http.get(this.API_URL + '/posts');
   }
 }
