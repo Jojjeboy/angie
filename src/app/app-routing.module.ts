@@ -11,6 +11,7 @@ import { PostsComponent } from './posts/posts.component';
 import { MessageComponent } from './message/message.component';
 import { FormComponent } from './form/form.component';
 import { Message2Component } from './message2/message2.component';
+import { CommonComponent } from './common/common.component';
 
 const routes: Routes = [
   {
@@ -36,7 +37,12 @@ const routes: Routes = [
   {
     path: 'message2',
     component: Message2Component,
-    data: { title: 'Messages' }
+    data: { title: 'Messages2' }
+  },
+  {
+    path: 'common',
+    component: CommonComponent,
+    data: { title: 'Common' }
   },
 
   { path: '**', component: PageNotFoundComponent }
