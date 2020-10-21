@@ -35,11 +35,11 @@ export class CodeDisplayComponent {
   onHighlight(e) {
     this.response = {
       language: e.language,
-      r: e.r,
+      relevance: e.relevance,
       second_best: '{...}',
       top: '{...}',
       value: '{...}'
-    };
+    }
   }
 
 }

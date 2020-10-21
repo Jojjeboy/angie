@@ -14,7 +14,8 @@
           "/*.js"
         ]
       }
-    }, {
+    },
+    {
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
@@ -23,18 +24,6 @@
           "/assets/**",
           "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
-      }
-    }
-  ],
-  "dataGroups": [
-    {
-      "name": "posts",
-      "urls": [
-        "https://jsonplaceholder.typicode.com"
-      ],
-      "cacheConfig": {
-        "maxSize": 3,
-        "maxAge": "5d"
       }
     }
   ]

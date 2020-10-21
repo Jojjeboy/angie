@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CodeDisplayComponent } from './code-display/code-display.component';
-import { HighlightModule } from 'ngx-highlightjs';
+import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
 import xml from 'highlight.js/lib/languages/xml';
 import css from 'highlight.js/lib/languages/css';
@@ -22,9 +22,16 @@ export function hljsLanguages() {
   declarations: [CodeDisplayComponent],
   imports: [
     CommonModule,
-    HighlightModule.forRoot({
-      languages: hljsLanguages
-    })
+    HighlightModule
+  ],
+  providers: [
+    {
+      provide: HIGHLIGHT_OPTIONS,
+      useValue: {
+        lineNumbers: false,
+        fullLibraryLoader: () => import('highlight.js'),
+      }
+    }
   ],
   exports: [
     CodeDisplayComponent
