@@ -13,7 +13,7 @@ export class FormComponent implements OnInit, AfterViewInit {
 
   @Input() placeholder: string;
 
-  @ViewChild('messageInput', {static: false}) messageInputElementRef: ElementRef;
+  @ViewChild('messageInput') messageInputElementRef: ElementRef;
   ngAfterViewInit(){
     this.messageInputElementRef.nativeElement.focus();
   }
