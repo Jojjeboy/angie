@@ -5,6 +5,12 @@
   "projects": {
     "angie": {
       "projectType": "application",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "sv": "src/app/locale/messages.sv.xlf"
+        }
+      },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -38,7 +44,7 @@
             "scripts": [],
             "allowedCommonJsDependencies": [
               "highlight.js"
-           ]
+            ]
           },
           "configurations": {
             "production": {
@@ -52,6 +58,11 @@
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
+              "sv": {
+                "localize": [
+                  "sv"
+                ]
+              },
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -134,6 +145,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "angie"
 }
