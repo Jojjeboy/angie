@@ -6,9 +6,11 @@
     "angie": {
       "projectType": "application",
       "i18n": {
-        "sourceLocale": "en-US",
         "locales": {
-          "sv": "src/app/locale/messages.sv.xlf"
+          "sv": {
+            "translation": "src/locale/messages.sv.xlf",
+            "baseHref": ""
+          }
         }
       },
       "schematics": {
@@ -58,11 +60,6 @@
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
-              "sv": {
-                "localize": [
-                  "sv"
-                ]
-              },
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -81,6 +78,10 @@
               ],
               "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
+            },
+            "sv": {
+              "aot": true,
+              "outputPath": "dist/angie-sv"
             }
           }
         },
@@ -92,6 +93,9 @@
           "configurations": {
             "production": {
               "browserTarget": "angie:build:production"
+            },
+            "sv": {
+              "browserTarget": "angie:build:sv"
             }
           }
         },

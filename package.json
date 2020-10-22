@@ -4,10 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:sv": "ng serve --configuration=sv",
     "build": "ng build",
+    "build:sv": "ng build --configuration=sv",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "int:extract": "ng xi18n"
   },
   "private": true,
   "dependencies": {
