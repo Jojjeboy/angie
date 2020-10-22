@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "int:extract": "ng xi18n"
+    "int:extract": "ng xi18n --ivy",
+    "buildfordeployment": "ng build --prod --baseHref=\"https://jojjeboy.github.io/angie/\" --output-path docs"
   },
   "private": true,
   "dependencies": {
