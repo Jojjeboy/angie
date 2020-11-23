@@ -9,6 +9,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   API_URL  =  'https://jsonplaceholder.typicode.com';
+  API_CORONA_URL  =  'https://api.covid19api.com/dayone/country/sweden/status/confirmed';
 
 
   getPosts() {
