@@ -15,4 +15,8 @@ export class ApiService {
   getPosts() {
     return this.http.get(this.API_URL + '/posts');
   }
+
+  getCoronaData() {
+    return this.http.get(this.API_CORONA_URL);
+  }
 }

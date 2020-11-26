@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ApiService } from '../api.service';
 import { Post } from '../post';
+import { CoronaDay } from '../corona-day';
 
 @Component({
   selector: 'app-posts',
@@ -21,6 +22,8 @@ export class PostsComponent implements OnInit {
 
   ngOnInit() {
     this.getPosts();
+    this.apiService.getCoronaData().subscribe((data: CoronaDay) => {
+      console.log(data);      
+    });
   }
-
 }
