@@ -25,7 +25,8 @@
           "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ],
         "urls": [
-          "https://jsonplaceholder.typicode.com/posts"
+          "https://jsonplaceholder.typicode.com/posts",
+          "https://api.covid19api.com/dayone/country/sweden/status/confirmed"
         ]
       }
     }

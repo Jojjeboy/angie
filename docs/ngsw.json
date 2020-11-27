@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1603443206029,
+  "timestamp": 1606491751529,
   "index": "https://jojjeboy.github.io/angie/index.html",
   "assetGroups": [
     {
@@ -14,7 +14,7 @@
         "https://jojjeboy.github.io/angie/4.54b5df72fbe0a222f839.js",
         "https://jojjeboy.github.io/angie/favicon.ico",
         "https://jojjeboy.github.io/angie/index.html",
-        "https://jojjeboy.github.io/angie/main.8f39d4c6612436a711a0.js",
+        "https://jojjeboy.github.io/angie/main.592fc7bbc96a161b37f2.js",
         "https://jojjeboy.github.io/angie/manifest.webmanifest",
         "https://jojjeboy.github.io/angie/polyfills.4e2e85cdb41766daeba7.js",
         "https://jojjeboy.github.io/angie/runtime.bfa5120c415507ddcbfa.js",
@@ -45,7 +45,8 @@
         "https://jojjeboy.github.io/angie/fontawesome-webfont.f691f37e57f04c152e23.woff"
       ],
       "patterns": [
-        "https:\\/\\/jsonplaceholder\\.typicode\\.com\\/posts"
+        "https:\\/\\/jsonplaceholder\\.typicode\\.com\\/posts",
+        "https:\\/\\/api\\.covid19api\\.com\\/dayone\\/country\\/sweden\\/status\\/confirmed"
       ]
     }
   ],
@@ -66,8 +67,8 @@
     "https://jojjeboy.github.io/angie/fontawesome-webfont.8b43027f47b20503057d.eot": "d980c2ce873dc43af460d4d572d441304499f400",
     "https://jojjeboy.github.io/angie/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "https://jojjeboy.github.io/angie/fontawesome-webfont.f691f37e57f04c152e23.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "https://jojjeboy.github.io/angie/index.html": "a8e6ccb3ea7344faa78f674d506ee5c047cf2bb3",
-    "https://jojjeboy.github.io/angie/main.8f39d4c6612436a711a0.js": "a415184e35de300f20bc1801aa9e3cbfdc8b9334",
+    "https://jojjeboy.github.io/angie/index.html": "24da8927c018ff6f7bbb76061f03313cd4a152bf",
+    "https://jojjeboy.github.io/angie/main.592fc7bbc96a161b37f2.js": "d19b6662b6bf4bfad7b14422bb84d71516576425",
     "https://jojjeboy.github.io/angie/manifest.webmanifest": "e32bb736ecbb2fc751af8f74b35dba1d622996d3",
     "https://jojjeboy.github.io/angie/polyfills.4e2e85cdb41766daeba7.js": "dbc502f030c7bb83c7caa1feee7aff990831f7d9",
     "https://jojjeboy.github.io/angie/runtime.bfa5120c415507ddcbfa.js": "0980448a60b0202b8e2afa85993c30fcc8270f99",
