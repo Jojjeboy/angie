@@ -27,7 +27,12 @@
         "urls": [
           "https://jsonplaceholder.typicode.com/posts",
           "https://api.covid19api.com/dayone/country/sweden/status/confirmed"
-        ]
+        ],
+        "cacheConfig": {
+          "strategy": "performance",
+          "maxSize": 200,
+          "maxAge": "12h"
+        }
       }
     }
   ]
