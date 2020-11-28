@@ -12,6 +12,7 @@ import { MessageComponent } from './message/message.component';
 import { FormComponent } from './form/form.component';
 import { Message2Component } from './message2/message2.component';
 import { CommonComponent } from './common/common.component';
+import { GraphComponent } from './graph/graph.component';
 
 const routes: Routes = [
   {
@@ -52,7 +53,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(
-      routes, {enableTracing: true}
+      routes, {enableTracing: false}
     ),
     HttpClientModule
   ],
@@ -66,7 +67,8 @@ const routes: Routes = [
     PostsComponent,
     MessageComponent,
     FormComponent,
-    Message2Component
+    Message2Component,
+    GraphComponent
   ],
 })
 export class AppRoutingModule { }

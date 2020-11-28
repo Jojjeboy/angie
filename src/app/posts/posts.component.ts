@@ -10,20 +10,36 @@ import { CoronaDay } from '../corona-day';
 })
 export class PostsComponent implements OnInit {
 
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService) { 
+    this.getPosts();
+    this.apiService.getCoronaData().subscribe((data: CoronaDay[]) => {
+      this.coronastats = data;
+      let coronadata = [];
+      let coronadate = [];
+      data.forEach(function(item){
+        coronadata.push(item.Cases);
+        coronadate.push(item.Date);
+      });
+      this.newDataArr = coronadata
+      this.newDateArr = coronadate;
+      
+      //console.log(this.cases);
+    });
+  }
 
   public posts: Post[];
+  public coronastats: CoronaDay[];
+  public cases: number[];
+  public newDataArr = [];
+  public newDateArr = [];
+
 
   public getPosts() {
     this.apiService.getPosts().subscribe((data: Post[]) => {
       this.posts = data;
     });
   }
-
+  
   ngOnInit() {
-    this.getPosts();
-    this.apiService.getCoronaData().subscribe((data: CoronaDay) => {
-      console.log(data);      
-    });
   }
 }
