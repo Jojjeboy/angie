@@ -8,6 +8,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { CommonComponent } from './common/common.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

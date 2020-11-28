@@ -69,6 +69,12 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 font-awesome
 (OFL-1.1 AND MIT)
 
+highcharts
+https://www.highcharts.com/license
+
+highcharts-angular
+SEE LICENSE IN <LICENSE>
+
 highlight.js
 BSD-3-Clause
 BSD 3-Clause License

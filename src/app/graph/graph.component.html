@@ -1,0 +1,12 @@
+<h2>Demo #1: Highcharts with a basic editor</h2>
+<article>
+  <section>
+  </section>
+  <highcharts-chart 
+    [Highcharts]="Highcharts"
+    [options]="optFromInput"
+    [(update)]="updateFromInput"
+    [oneToOne]=true
+    (chartInstance)="logChartInstance($event)"
+  ></highcharts-chart>
+</article>

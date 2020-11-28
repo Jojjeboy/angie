@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
+import { HighchartsChartModule } from 'highcharts-angular';
 import { AboutComponent } from './about/about.component';
 import { StartComponent } from './start/start.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -45,6 +46,11 @@ const routes: Routes = [
     component: CommonComponent,
     data: { title: 'Common' }
   },
+  {
+    path: 'graph',
+    component: GraphComponent,
+    data: { title: 'Graph' }
+  },
 
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -55,7 +61,9 @@ const routes: Routes = [
     RouterModule.forRoot(
       routes, {enableTracing: false}
     ),
-    HttpClientModule
+    HttpClientModule,
+    HighchartsChartModule
+
   ],
   exports: [RouterModule],
   declarations: [
