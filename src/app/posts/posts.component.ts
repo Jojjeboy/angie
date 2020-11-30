@@ -23,7 +23,6 @@ export class PostsComponent implements OnInit {
       this.newDataArr = coronadata
       this.newDateArr = coronadate;
       
-      //console.log(this.cases);
     });
   }
 
