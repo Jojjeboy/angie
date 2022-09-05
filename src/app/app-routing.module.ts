@@ -59,7 +59,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(
-      routes, {enableTracing: false}
+      routes, { enableTracing: false, relativeLinkResolution: 'legacy' }
     ),
     HttpClientModule,
     HighchartsChartModule
