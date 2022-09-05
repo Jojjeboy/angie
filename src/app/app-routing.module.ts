@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { HighchartsChartModule } from 'highcharts-angular';
-import { AboutComponent } from './about/about.component';
 import { StartComponent } from './start/start.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HttpComponent } from './http/http.component';
@@ -22,9 +21,9 @@ const routes: Routes = [
     data: { title: 'Start Page' }
   },
   {
-    path: 'about',
-    component: AboutComponent,
-    data: { title: 'About Page' }
+    path: 'start',
+    component: StartComponent,
+    data: { title: 'Start Page' }
   },
   {
     path: 'http',
@@ -67,7 +66,7 @@ const routes: Routes = [
   ],
   exports: [RouterModule],
   declarations: [
-    AboutComponent,
+    StartComponent,
     StartComponent,
     PageNotFoundComponent,
     HttpComponent,
