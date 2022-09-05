@@ -1,4 +1,4 @@
-# Angie
+# Angie (Angular 14)
 
 This project is for used for testing various Angular features, the app covers
 
