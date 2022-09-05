@@ -11,7 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "int:extract": "ng xi18n --ivy",
-    "buildfordeployment": "ng build --prod --baseHref=\"https://jojjeboy.github.io/angie/\" --output-path docs"
+    "buildfordeployment": "ng build --output-path docs --base-href https://jojjeboy.github.io/angie/"
   },
   "private": true,
   "dependencies": {
